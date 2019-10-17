@@ -7,6 +7,7 @@ type status =
   | Error
 
 val create: ?env:string array -> string -> t
+(** [create ?env cmd] create a new sub process. *)
 
 val stdout: t -> in_channel
 

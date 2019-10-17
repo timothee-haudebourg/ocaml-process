@@ -12,7 +12,7 @@ type status =
 
 type result = status * string * string
 
-let create ?(env=[| |]) cmd =
+let create ?(env=Unix.environment ()) cmd =
   let oc, ic, ec = Unix.open_process_full cmd env in
   {
     stdout = oc;
