@@ -10,7 +10,7 @@ type status =
   | Ok
   | Error
 
-type result = status * string * string
+(* type result = status * string * string *)
 
 let create ?(env=Unix.environment ()) cmd =
   let oc, ic, ec = Unix.open_process_full cmd env in
