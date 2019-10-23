@@ -5,7 +5,7 @@ MODULE=Process
 # Include configuration variables.
 include Makefile.config
 
-INCLUDES=-I src -I +threads
+INCLUDES=-I src
 
 DFLAGS=$(INCLUDES)
 CFLAGS=$(INCLUDES)
