@@ -1,5 +1,0 @@
-(library
-  (name process)
-  (public_name process)
-  (libraries unix)
-)
