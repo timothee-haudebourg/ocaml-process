@@ -5,7 +5,7 @@ MODULE=Process
 # Include configuration variables.
 include Makefile.config
 
-INCLUDES=-I src
+INCLUDES=-I src -I $(LIB_UNIX)
 
 DFLAGS=$(INCLUDES)
 CFLAGS=$(INCLUDES)
